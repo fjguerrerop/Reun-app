@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Titulo de la reunión"
+        android:id="@+id/txtTituloItemReunion"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtFechaItemReunion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Fecha reunión"
+        android:id="@+id/txtFechaItemReunion"
+        android:layout_below="@+id/txtTituloItemReunion"
+        android:layout_alignStart="@+id/txtCiudadItemReunion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ciudad: Ibagué"
+        android:id="@+id/txtCiudadItemReunion"
+        android:layout_below="@+id/txtFechaItemReunion"
+        android:layout_toEndOf="@+id/imagen_item_reunion" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagen_item_reunion"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/magnifier"
+        android:layout_alignBottom="@+id/txtCiudadItemReunion"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
