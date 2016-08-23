@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
         reciclador = (RecyclerView) findViewById(R.id.reciclador);
         reciclador.setHasFixedSize(true);
-
+// a partir de aqui esta el problema
+        
         JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, URLS.CANTIDAD_REUNIONES, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
